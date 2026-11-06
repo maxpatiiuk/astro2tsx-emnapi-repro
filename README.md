@@ -95,7 +95,7 @@ To recreate this selection in an empty directory, install in this order:
 ```sh
 npm init -y
 npm install --save-exact --save-optional @rolldown/binding-wasm32-wasi@1.3.0
-npm install --save-exact astro@7.4.6 @astrojs/check@0.9.12 typescript@6.0.3
+npm install --save-exact astro@7.4.7 @astrojs/check@0.9.12 typescript@6.0.3
 npx astro check
 ```
 
@@ -109,6 +109,9 @@ and TypeScript selected the working runtime `1.11.3` in testing. The included
 lockfile preserves the failing selection so `npm ci` reproduces it reliably.
 
 ## System details
+
+Verified with Astro 7.4.7 and `@astrojs/check` 0.9.12, the latest releases
+when tested on 2026-11-06. No Astro plugins are configured.
 
 Tested on macOS ARM64 with Node.js 24.18.0 and npm 11.16.0.
 Reproduced with pnpm 11 too.
